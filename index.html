@@ -64,6 +64,13 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	<script defer src="https://cdn.commento.io/js/commento.js"></script>
+	<script>
+function scrollToElement(id) {
+  var element = document.getElementById(id);
+  element.scrollIntoView({ behavior: "smooth" });
+}
+
+	</script>
 		<div class="fh5co-loader"></div>
 	</head>
 	<body>	
@@ -78,9 +85,8 @@
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
-
-						<li><a href="#fh5co-started">RSVP</a></li>
-						<li><a href="#directions">Location</a></li>
+						<li><a href="index.html#fh5co-started">RSVP</a></li>
+						<li><a href="index.html#directions">Location</a></li>
 					</ul>
 				</div>
 			</div>
