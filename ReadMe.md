@@ -12,7 +12,9 @@
 
 - issues?
 
-# DNS Setup with GO Daddy: <https://carlosroso.com/gh-pages-with-godaddy-domain/>
+# DNS Setup with GO Daddy
+
+- <https://carlosroso.com/gh-pages-with-godaddy-domain/>
 
 1. Set up domain in repo settings
 In your repository, go to Settings > Pages > Custom domain. Write your domain without www.
