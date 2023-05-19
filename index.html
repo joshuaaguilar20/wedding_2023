@@ -54,6 +54,8 @@ function scrollToElement(id) {
   element.scrollIntoView({ behavior: "smooth" });
 }
 
+
+
 	</script>
 		<div class="fh5co-loader"></div>
 	</head>
@@ -70,14 +72,14 @@ function scrollToElement(id) {
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/spring_2.jpg" data-stellar-background-ratio="0.5">
+	<header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Anna &amp; Joshua </h1>
+							<h1>Anna &amp; Joshua</h1>
 							<h2>For we walk by faith, not by sight</h2>
 							<!-- <div class="simply-countdown simply-countdown-one"></div> -->
 							<p>
@@ -104,7 +106,7 @@ function scrollToElement(id) {
 						<a target="_blank" href="https://www.sunburstranchcanoe.com/cabin-rentals/">Sunburst Ranch Landing</a>
 						<br>
 						<p>
-							Please indicate your preferred choice of protein for all members of your party in the RSVP comment box.
+							Please indicate your preferred choice of protein for all members of your party in the RSVP comment box. We currently do not have a registration setup. Donations of prayer, love and gifts for our new house building project are welcome. <br> <a href="https://venmo.com/Josh-Aguilar-7">Donate with Venmo</a>
 						</p>
 					</p>
 
@@ -116,7 +118,7 @@ function scrollToElement(id) {
 		</div>
 	</div>
 
-	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/dott_1.jpg);">
+	<div id="fh5co-event" class="fh5co-bg">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -279,6 +281,26 @@ function scrollToElement(id) {
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 	
+	<script>
+		/* Simple Resize For Mobile View */
+		const header = document.getElementById("fh5co-header");
+		const picture2 = document.getElementById("fh5co-event");
+		const setBackgroundImage = () => {
+  		if (window.innerWidth <= 600) {
+    		header.style.backgroundImage = "url(images/fuku.png)";
+				picture2.style.backgroundImage = "url(images/dott_7.png)";
+  		} else {
+    		header.style.backgroundImage = "url(images/spring_2.jpg)"
+				picture2.style.backgroundImage = "url(images/dott_3.png)";
+  	}
+}
+
+// Call the function on page load and window resize
+window.addEventListener('load', setBackgroundImage);
+window.addEventListener('resize', setBackgroundImage);
+
+
+	</script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->

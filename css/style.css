@@ -874,6 +874,15 @@ form label {
     font-size: 16px;
   }
 }
+
+#fh5co-header {
+  background-image: url(images/spring_2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
